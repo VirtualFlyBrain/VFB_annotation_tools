@@ -6,13 +6,13 @@ This process is currently split into 2 steps, but it may be possible to reduce d
 
 ** merging queries file with imports
 
-owltools FBbt_query_classes.owl --merge-import-closure -o file://`pwd`/FBbt_query_classes_merged.owl
+owltools FBbt_query_classes.owl \--merge-import-closure -o file://`pwd`/FBbt_query_classes_merged.owl
 
 ** pre-reasoning step
 
 The query classes require a DL reasoner, but do not require imported terms.  jfact + fbbt-simple.obo works well.
 
-ontology-release-runner FBbt_query_classes_merged.owl --reasoner jfact --relaxed --no-subsets --allow-overwrite --outdir ....
+ontology-release-runner FBbt_query_classes_merged.owl \--reasoner jfact \--relaxed \--no-subsets \--allow-overwrite \--outdir ....
 
 We need the relaxed version - as this retains terms outside of the fbbt id space (which our query terms are).
 
