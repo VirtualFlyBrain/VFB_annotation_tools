@@ -1,5 +1,3 @@
-THIS FILE IS BEST VIEWED IN EMACS ORG MODE
-
 * Pipeline code
 
 AIM: to generate an OWL file containing query classes and in which the classification hierarchy is asserted.  This can then be used with Populous to populate spreadsheet columns in templates.
@@ -8,7 +6,7 @@ This process is currently split into 2 steps, but it may be possible to reduce d
 
 ** merging queries file with imports
 
-owltools --use-catalog-xml FBbt_query_classes.owl --merge-import-closure -o file://`pwd`/FBbt_query_classes_merged.owl
+owltools FBbt_query_classes.owl --merge-import-closure -o file://`pwd`/FBbt_query_classes_merged.owl
 
 ** pre-reasoning step
 
@@ -25,5 +23,5 @@ Use Jenkins for pipeline.  Check the results back in to the repo.
 
 * Plans for sync with VFB update cycle.
 
-(i) VFB should have a link to the ontology version live on VFB.
-(ii) Jenkins checks this in to repo (?).
+ -  VFB should have a link to the ontology version live on VFB.
+ -  Jenkins checks this in to repo  
