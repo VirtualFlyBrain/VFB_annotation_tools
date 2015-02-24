@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.virtualflybrain.org/ontologies/FBbt_query_classes.owl#"
+     xml:base="http://www.virtualflybrain.org/ontologies/FBbt_query_classes.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.virtualflybrain.org/ontologies/FBbt_query_classes.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/fbbt.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbtQuery_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbtQuery_0000001">
+        <rdfs:label xml:lang="en">Query - adult brain neuron</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbtQuery_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbtQuery_0000002">
+        <rdfs:label xml:lang="en">Query - adult brain neuropil</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00040006"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00040007"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00041000"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbtQuery_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbtQuery_0000003">
+        <rdfs:label xml:lang="en">Query - adult brain tracts and nerves</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005099"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002134"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbtQuery_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbtQuery_0000004">
+        <rdfs:label xml:lang="en">Query - overlaps adult brain</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1912) http://owlapi.sourceforge.net -->
+
